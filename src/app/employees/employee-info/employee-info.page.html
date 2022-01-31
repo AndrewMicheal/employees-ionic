@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/employees"></ion-back-button>
+    </ion-buttons>
+    <ion-card-subtitle>{{employeeInfoDetail.id}} - {{employeeInfoDetail.name}}</ion-card-subtitle>
+    <ion-buttons (click) = "deleteEmployee()" slot="primary">
+      <ion-icon name="trash" slot="icon-only"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-avatar>
+      <ion-img [src]="employeeInfoDetail.avatar"></ion-img>
+    </ion-avatar>
+    <ion-card-header>
+
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
